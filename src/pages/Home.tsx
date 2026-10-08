@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import imagemLateral from '../assets/imagemlateral.png';
 import logoSipat from '../assets/SIPAT_logo.png';
 
@@ -24,11 +25,19 @@ function Home() {
     // Calcula já na primeira renderização para não piscar "Já começou"
     const [diasRestantes, setdiasRestantes] = useState(calcularDias);
     const jaComecou = diasRestantes === 0;
+    const location = useLocation();
     useEffect(() => {
         const intervalo = setInterval(() => setdiasRestantes(calcularDias()), 1000 * 60 * 60);
 
         return () => clearInterval(intervalo);
     }, []);
+
+    // Rola até a seção indicada no link (ex.: "Programação" no header)
+    useEffect(() => {
+        if (location.hash) {
+            document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [location.key, location.hash]);
     return (
         <main className="flex-col w-full">
             <div className='flex'>
@@ -85,7 +94,7 @@ function Home() {
                 <div className='bg-gray-200 h-[110px] w-[125px] md:h-[280px] md:w-[380px] '></div>
                 <div className='bg-gray-200 h-[110px] w-[125px] md:h-[280px] md:w-[380px] '></div>
             </div> */}
-            <div className='md:h-auto md:mt-[30px] mt-[12px] ml-[2%] mr-[2%] flex flex-col justify-between '>
+            <div id='programacao' className='scroll-mt-[10px] md:h-auto md:mt-[30px] mt-[12px] ml-[2%] mr-[2%] flex flex-col justify-between '>
                 <div className='h-fit w-full flex '>
                     <div style={{ backgroundImage: `url(${new URL('../assets/REGAP-9942.jpg', import.meta.url).href})` }} className='w-full h-fit rounded-2xl flex bg-cover bg-left bg-no-repeat mb-[5%] shadow-[2px_5px_12px_rgba(0,0,0,0.55)] '>
                         <div className=' bg-[linear-gradient(to_right,#D10C56_33%,transparent_38%)] rounded-2xl md:h-[300px] h-[105px] w-[100%] flex flex-col text-center content-center justify-center'>

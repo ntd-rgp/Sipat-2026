@@ -12,7 +12,7 @@ function Header() {
             Home
           </Link>
 
-          <Link className={linkClass} to="/programacao">
+          <Link className={linkClass} to={{ pathname: '/', hash: '#programacao' }}>
             Programação
           </Link>
         </div>
