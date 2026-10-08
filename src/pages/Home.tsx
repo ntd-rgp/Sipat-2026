@@ -38,8 +38,8 @@ function Home() {
                         alt="Logo SIPAT"
                         className="h-auto w-[265px] md:w-[900px] ml-[2%]" />
                     <h1 className="font-[700] md:text-[36px] text-[12px] mt-[12px] ml-[4%]">REFINARIA GABRIEL PASSOS</h1>
-                    <h1 className="font-[700] md:text-[36px] text-[12px] text-[#d10c56] ml-[4%]">LOREM IPSUM DOLOR SIT AMET</h1>
-                    <p className='w-[60%] md:mt-[30px] mt-[12px] md:text-[24px] text-[12px] ml-[4%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h1 className="font-[700] md:text-[36px] text-[12px] text-[#d10c56] ml-[4%]">SEGURANÇA COMEÇA EM VOCÊ</h1>
+                    <p className='w-[60%] md:mt-[30px] mt-[12px] md:text-[24px] text-[12px] ml-[4%]'>Uma semana para superar limites, enxergar os riscos do dia a dia e cuidar do equilíbrio entre trabalho, saúde e bem-estar.</p>
                     <p className='w-fit bg-[#d10c56] pl-[2%] pr-[2%] text-white md:mt-[30px] mt-[12px] md:text-[24px] text-[12px] ml-[4%]'>Superação, atenção aos riscos e vida equilibrada.</p>
                 </div>
 
@@ -58,18 +58,18 @@ function Home() {
                 </div>
                 <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
                 <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>{diasRestantes}</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[14px] m-0 p-0 leading-none md:w-[145px] w-[80px] break-words md:pt-[15px] pt-[5px] '>DIAS FALTANDO</p>
+                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>+20</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>ATIVIDADES</p>
                 </div>
                 <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
                 <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>{diasRestantes}</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[14px] m-0 p-0 leading-none md:w-[145px] w-[80px] break-words md:pt-[15px] pt-[5px] '>DIAS FALTANDO</p>
+                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>4</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>PALESTRANTES</p>
                 </div>
                 <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
                 <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>{diasRestantes}</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[14px] m-0 p-0 leading-none md:w-[145px] w-[80px] break-words md:pt-[15px] pt-[5px] '>DIAS FALTANDO</p>
+                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>+600</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>PARTICIPANTES</p>
                 </div>
             </div>
 
