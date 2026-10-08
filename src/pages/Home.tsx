@@ -2,29 +2,30 @@ import { useEffect, useState } from 'react';
 import imagemLateral from '../assets/imagemlateral.png';
 import logoSipat from '../assets/SIPAT_logo.png';
 
+const dataInicio = new Date(2026, 10, 9);
+
+function calcularDias() {
+    const agora = new Date();
+    const hoje = new Date(
+        agora.getFullYear(),
+        agora.getMonth(),
+        agora.getDate()
+    );
+    const diferencaEmMilissegundos = dataInicio.getTime() - hoje.getTime();
+
+    const dias = Math.ceil(
+        diferencaEmMilissegundos / (1000 * 60 * 60 * 24)
+    );
+
+    return Math.max(0, dias);
+}
+
 function Home() {
-    const [diasRestantes, setdiasRestantes] = useState(0);
-    const dataFinal = new Date(2026, 10, 9);
+    // Calcula já na primeira renderização para não piscar "Já começou"
+    const [diasRestantes, setdiasRestantes] = useState(calcularDias);
+    const jaComecou = diasRestantes === 0;
     useEffect(() => {
-        function calcularDias() {
-            const agora = new Date();
-            const hoje = new Date(
-                agora.getFullYear(),
-                agora.getMonth(),
-                agora.getDate()
-            );
-            const diferencaEmMilissegundos = dataFinal.getTime() - hoje.getTime();
-
-            const dias = Math.ceil(
-                diferencaEmMilissegundos / (1000 * 60 * 60 * 24)
-            );
-
-            setdiasRestantes(Math.max(0, dias));
-        }
-
-        calcularDias();
-
-        const intervalo = setInterval(calcularDias, 1000 * 60 * 60);
+        const intervalo = setInterval(() => setdiasRestantes(calcularDias()), 1000 * 60 * 60);
 
         return () => clearInterval(intervalo);
     }, []);
@@ -53,8 +54,14 @@ function Home() {
 
             <div className='md:h-[200px] md:mt-[30px] h-[110px] mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-center items-center md:gap-[70px] gap-[8px] '>
                 <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>{diasRestantes}</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[14px] m-0 p-0 leading-none md:w-[145px] w-[80px] break-words md:pt-[15px] pt-[5px] '>DIAS FALTANDO</p>
+                    {jaComecou ? (
+                        <p className=' text-center text-[#d10c56] md:text-[56px] text-[20px] m-0 p-0 leading-none '>JÁ<br />COMEÇOU</p>
+                    ) : (
+                        <>
+                            <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>{diasRestantes}</p>
+                            <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[14px] m-0 p-0 leading-none md:w-[145px] w-[80px] break-words md:pt-[15px] pt-[5px] '>{diasRestantes === 1 ? 'DIA FALTANDO' : 'DIAS FALTANDO'}</p>
+                        </>
+                    )}
                 </div>
                 <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
                 <div className='w-fit flex-col'>

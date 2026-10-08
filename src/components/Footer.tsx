@@ -4,7 +4,7 @@ function Footer() {
             <div className="flex  justify-center m-[2%]">
 
                 <div className="md:w-[800px] w-[265px] bg-[#d10c56] md:h-[180px] h-auto flex">
-                    <p className="w-[155px] md:w-[400px] ml-[2%] text-[20.3px] md:text-5xl">Lorem Ipsun Dolor Sit Amet Vacum Metsaniba</p>
+                    <p className="w-[155px] md:w-[400px] ml-[2%] text-[20.3px] md:text-5xl">A segurança de todos começa em você primeiro</p>
 
                     {/* <p className="text-[30px] md:text-[65px] self-end ml-auto mr-[5px] text-right font-[Petrobras Sans Rg] font-[700] text-black">NTD.</p> */}
                 </div>
