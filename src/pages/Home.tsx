@@ -73,11 +73,11 @@ function Home() {
                 </div>
             </div>
 
-            <div className='md:h-auto md:mt-[30px] mt-[12px] ml-[2%] mr-[2%] flex justify-between '>
+            {/* <div className='md:h-auto md:mt-[30px] mt-[12px] ml-[2%] mr-[2%] flex justify-between '>
                 <div className='bg-gray-200 h-[110px] w-[125px] md:h-[280px] md:w-[380px] '></div>
                 <div className='bg-gray-200 h-[110px] w-[125px] md:h-[280px] md:w-[380px] '></div>
                 <div className='bg-gray-200 h-[110px] w-[125px] md:h-[280px] md:w-[380px] '></div>
-            </div>
+            </div> */}
             <div className='md:h-auto md:mt-[30px] mt-[12px] ml-[2%] mr-[2%] flex flex-col justify-between '>
                 <div className='h-fit w-full flex '>
                     <div style={{ backgroundImage: `url(${new URL('../assets/REGAP-9942.jpg', import.meta.url).href})` }} className='w-full h-fit rounded-2xl flex bg-cover bg-left bg-no-repeat mb-[5%] shadow-[2px_5px_12px_rgba(0,0,0,0.55)] '>
