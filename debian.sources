@@ -1,0 +1,11 @@
+Types: deb
+URIs: https://jfrog.petrobras.dev.br/artifactory/apt_debian
+Suites: bookworm bookworm-updates
+Components: main
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: https://jfrog.petrobras.dev.br/artifactory/apt_debian_security
+Suites: bookworm-security
+Components: main
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg

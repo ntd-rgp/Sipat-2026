@@ -1,0 +1,5 @@
+npmRegistryServer: "https://jfrog.petrobras.dev.br/artifactory/api/npm/npm-group-all/"
+enableStrictSsl: false
+
+unsafeHttpWhitelist:
+ - jfrog.petrobras.dev.br
