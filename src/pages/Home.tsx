@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import imagemLateral from '../assets/imagemlateral.png';
 import logoSipat from '../assets/SIPAT_logo.png';
-import imagem01 from '../assets/Imagem_gerada_1.png'
-import imagem02 from '../assets/Imagem_gerada.png'
 
 function Home() {
     const [diasRestantes, setdiasRestantes] = useState(0);

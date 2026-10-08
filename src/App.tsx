@@ -9,7 +9,7 @@ import './index.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="mx-auto flex min-h-screen w-full max-w-[1260px] flex-col">
         <Header />
 

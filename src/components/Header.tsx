@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/SIPAT_logo.png';
 function Header() {
   const linkClass =
@@ -7,13 +8,13 @@ function Header() {
       <nav className="grid min-w-[320px] grid-cols-[1fr_auto_1fr] items-center gap-1 px-1 py-2 sm:gap-2 sm:px-3">
         {/* Dois links à esquerda */}
         <div className="flex justify-end gap-1 sm:gap-2 text-[Petrobras Sans Rg]">
-          <a className={linkClass} href="/">
+          <Link className={linkClass} to="/">
             Home
-          </a>
+          </Link>
 
-          <a className={linkClass} href="/Programação">
+          <Link className={linkClass} to="/programacao">
             Programação
-          </a>
+          </Link>
         </div>
 
         {/* Logo no centro */}
@@ -25,13 +26,13 @@ function Header() {
 
         {/* Dois links à direita */}
         <div className="flex gap-1 sm:gap-2">
-          <a className={linkClass} href="/Sorteio">
+          <Link className={linkClass} to="/sorteio">
             Sorteio
-          </a>
+          </Link>
 
-          <a className={linkClass} href="/Organização">
+          <Link className={linkClass} to="/organizacao">
             Organização
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
