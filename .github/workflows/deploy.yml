@@ -17,12 +17,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+      # O lockfile aponta para o JFrog interno, inacessível pelo GitHub
+      - run: sed -i 's#https://jfrog.petrobras.dev.br/artifactory/api/npm/npm-group-all/#https://registry.npmjs.org/#g' package-lock.json
       - run: npm ci
       - run: npm run build
       # Fallback para rotas do React Router ao recarregar a página
