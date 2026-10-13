@@ -115,6 +115,24 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Rodrigo Antunes</p>
+                                <p>Quadra do CETRE</p>
+                                <p>Segunda-Feira</p>
+                                <p>08:45</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Tec Segurança Regap - abordará o tema de movimentação de cargas</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Denison Mattos</p>
+                                <p>Quadra do CETRE</p>
+                                <p>Segunda-Feira</p>
+                                <p>09:15</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Administrador e professor, fala voltada para o equilíbrio na vida e atenção</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Feira agroecológica</p>
                                 <p>Saída do refeitório</p>
                                 <p>Segunda-Feira</p>
@@ -135,6 +153,16 @@ function Home() {
                                 <p>Quadra do CETRE</p>
                                 <p>Quarta-Feira</p>
                                 <p>08:30</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Colega da Petrobras, fala sobre fatores humanos</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Teatro Educa Vida</p>
+                                <p>Quadra do CETRE</p>
+                                <p>Quarta-Feira</p>
+                                <p>09:30</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Encenações e interações com a força de trabalho, com temas voltados a segurança e integridade</p>
                             </div>
                         </div>
                     </div>
@@ -161,6 +189,7 @@ function Home() {
                                 <p>Refeitório</p>
                                 <p>Quarta-Feira</p>
                                 <p>14:30</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Colega da Petrobras, fala sobre fatores humanos</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] '>
@@ -193,6 +222,24 @@ function Home() {
                                 <p>Quadra do CETRE</p>
                                 <p>Sexta-Feira</p>
                                 <p>08:00</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Flavio Peralta</p>
+                                <p>Quadra do CETRE</p>
+                                <p>Sexta-Feira</p>
+                                <p>08:30</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Sobrevivente de uma descarga de 13,8kV; fala sobre impactos na vida, riscos, superação</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Fabi do Vôlei</p>
+                                <p>Quadra do CETRE</p>
+                                <p>Sexta-Feira</p>
+                                <p>09:30</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Ex-atleta, bicampeã olímpica, comentarista e apresentadora no SporTV.</p>
                             </div>
                         </div>
                     </div>
