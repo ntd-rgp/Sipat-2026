@@ -30,8 +30,8 @@ function Header() {
             Sorteio
           </Link>
 
-          <Link className={linkClass} to="/organizacao">
-            Organização
+          <Link className={linkClass} to="/turno">
+            Turno
           </Link>
         </div>
       </nav>

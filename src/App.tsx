@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Programacao from './pages/Programacao';
 import Sorteio from './pages/Sorteio';
+import Turno from './pages/Turno';
 import './App.css';
 import './index.css';
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/programacao" element={<Programacao />} />
             <Route path="/sorteio" element={<Sorteio />} />
+            <Route path="/turno" element={<Turno />} />
           </Routes>
         </div>
 

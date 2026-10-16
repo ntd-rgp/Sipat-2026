@@ -110,16 +110,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Abertura SIPAT</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Segunda-Feira</p>
-                                <p>08:15</p>
-                            </div>
-                        </div>
-                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
-                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Rodrigo Antunes</p>
-                                <p>Quadra do CETRE</p>
-                                <p>Segunda-Feira</p>
-                                <p>08:45</p>
-                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Tec Segurança Regap - abordará o tema de movimentação de cargas</p>
+                                <p>07:45</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -127,8 +118,17 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Denison Mattos</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Segunda-Feira</p>
-                                <p>09:15</p>
+                                <p>08:45</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Administrador e professor, fala voltada para o equilíbrio na vida e atenção</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Fabi do Vôlei</p>
+                                <p>Quadra do CETRE</p>
+                                <p>Segunda-Feira</p>
+                                <p>09:40</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Ex-atleta, bicampeã olímpica, comentarista e apresentadora no SporTV.</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -149,7 +149,7 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra Fatores Humanos e Teatro</p>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Josue Maia França</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Quarta-Feira</p>
                                 <p>08:30</p>
@@ -177,7 +177,7 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Teatro (Game Show)</p>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Game Show</p>
                                 <p>Saída do refeitório</p>
                                 <p>Quarta-Feira</p>
                                 <p>11:30</p>
@@ -185,7 +185,7 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Josue Eduardo</p>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Josue Maia França</p>
                                 <p>Refeitório</p>
                                 <p>Quarta-Feira</p>
                                 <p>14:30</p>
@@ -194,7 +194,7 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Teatro ou Game Show C3</p>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Game Show C3</p>
                                 <p>R-1</p>
                                 <p>Quinta-Feira</p>
                                 <p>08:00</p>
@@ -210,7 +210,7 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Teatro ou Game Show </p>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Game Show – Gramo</p>
                                 <p>Área da GRAMO</p>
                                 <p>Quinta-Feira</p>
                                 <p>12:45</p>
@@ -221,7 +221,16 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Encerramento da SIPAT</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Sexta-Feira</p>
-                                <p>08:00</p>
+                                <p>07:45</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Rodrigo Antunes</p>
+                                <p>Quadra do CETRE</p>
+                                <p>Sexta-Feira</p>
+                                <p>08:45</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Tec Segurança Regap - abordará o tema de movimentação de cargas</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -229,17 +238,8 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Flavio Peralta</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Sexta-Feira</p>
-                                <p>08:30</p>
-                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Sobrevivente de uma descarga de 13,8kV; fala sobre impactos na vida, riscos, superação</p>
-                            </div>
-                        </div>
-                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
-                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Fabi do Vôlei</p>
-                                <p>Quadra do CETRE</p>
-                                <p>Sexta-Feira</p>
                                 <p>09:30</p>
-                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Ex-atleta, bicampeã olímpica, comentarista e apresentadora no SporTV.</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Sobrevivente de uma descarga de 13,8kV; fala sobre impactos na vida, riscos, superação</p>
                             </div>
                         </div>
                     </div>
@@ -301,7 +301,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Corrida</p>
                                 <p>Porta do CETRE</p>
                                 <p>Terça-Feira</p>
-                                <p>08:30</p>
+                                <p>08:00</p>
                             </div>
                         </div>
                     </div>
