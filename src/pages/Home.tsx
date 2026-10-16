@@ -88,7 +88,7 @@ function Home() {
                 ]} />
             </div>
 
-            <div className='md:h-[200px] md:mt-[30px] h-[110px] mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-center items-center md:gap-[70px] gap-[8px] '>
+            <div className='md:h-[200px] md:mt-[30px] h-[110px] mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-center items-center md:gap-[70px] gap-[8px] rounded-[16px]'>
                 <div className='w-fit flex-col'>
                     {jaComecou ? (
                         <p className=' text-center text-[#d10c56] md:text-[56px] text-[20px] m-0 p-0 leading-none '>JÁ<br />COMEÇOU</p>
