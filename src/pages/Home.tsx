@@ -4,6 +4,9 @@ import imagemLateral from '../assets/imagemlateral.png';
 import logoSipat from '../assets/SIPAT_logo.png';
 import mapaCorrida from '../assets/mapa-corrida.svg';
 import percursoCorrida from '../assets/percurso-corrida.mp4';
+import chamadaDenison from '../assets/chamada-denison.mp4';
+import chamadaPeralta from '../assets/chamada-peralta.mp4';
+import VideoCarousel from '../components/VideoCarousel';
 
 const dataInicio = new Date(2026, 10, 9);
 
@@ -77,6 +80,12 @@ function Home() {
                         alt="Imagem lateral"
                         className="h-auto w-[90px] md:w-[260px]" />
                 </div>
+            </div>
+            <div className='md:mt-[30px] mt-[20px] ml-[2%] mr-[2%]'>
+                <VideoCarousel videos={[
+                    { src: chamadaDenison, label: 'Chamada Denison Mattos' },
+                    { src: chamadaPeralta, label: 'Chamada Flavio Peralta' },
+                ]} />
             </div>
 
             <div className='md:h-[200px] md:mt-[30px] h-[110px] mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-center items-center md:gap-[70px] gap-[8px] '>
