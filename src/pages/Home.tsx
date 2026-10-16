@@ -106,12 +106,12 @@ function Home() {
                 </div>
                 <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
                 <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>4</p>
+                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>6</p>
                     <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>PALESTRANTES</p>
                 </div>
                 <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
                 <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>+600</p>
+                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>+4000</p>
                     <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>PARTICIPANTES</p>
                 </div>
             </div>
