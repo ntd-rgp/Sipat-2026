@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import imagemLateral from '../assets/imagemlateral.png';
 import logoSipat from '../assets/SIPAT_logo.png';
+import mapaCorrida from '../assets/mapa-corrida.svg';
+import percursoCorrida from '../assets/percurso-corrida.mp4';
 
 const dataInicio = new Date(2026, 10, 9);
 
@@ -26,10 +28,26 @@ function Home() {
     const [diasRestantes, setdiasRestantes] = useState(calcularDias);
     const jaComecou = diasRestantes === 0;
     const location = useLocation();
+    const videoRef = useRef<HTMLVideoElement>(null);
     useEffect(() => {
         const intervalo = setInterval(() => setdiasRestantes(calcularDias()), 1000 * 60 * 60);
 
         return () => clearInterval(intervalo);
+    }, []);
+
+    // Toca o vídeo do percurso quando ele aparece na tela e pausa quando sai
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+        const observer = new IntersectionObserver(([entrada]) => {
+            if (entrada.isIntersecting) {
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+            }
+        }, { threshold: 0.5 });
+        observer.observe(video);
+        return () => observer.disconnect();
     }, []);
 
     // Rola até a seção indicada no link (ex.: "Programação" no header)
@@ -351,6 +369,24 @@ function Home() {
             </div>
             <div className=' mr-[2%] ml-[2%] h-fit text-center flex justify-center items-center mt-[20px] '>
                 <a href='https://forms.cloud.microsoft/r/w4bYSrte2W' className=' transition-transform duration-80 active:scale-96 text-white bg-[#0e2245] w-[350px] md:w-[600px] m-[5px] rounded-[15px] h-[45px] md:h-[65px] flex justify-center items-center text-[22px] md:text-[36px] shadow-[6px_8px_12px_rgba(0,0,0,0.65)] '>Clique aqui para se inscrever</a>
+            </div>
+            <div className=' mr-[2%] ml-[2%] mt-[20px] md:mt-[40px] flex flex-col md:flex-row justify-center items-center gap-[8px] '>
+                {/* Celular: mapa na horizontal, mesma largura do vídeo, ambos com a margem de 2% do container. Telas maiores: caixa com a proporção do mapa girado (510 x 1374) e a imagem gira -90° dentro dela */}
+                <div className="relative w-full md:aspect-[510/1374] md:w-[265px] shrink-0">
+                    <img
+                        src={mapaCorrida}
+                        alt="Mapa da corrida SIPAT 2026"
+                        loading="lazy"
+                        className="block h-auto w-full md:absolute md:left-1/2 md:top-1/2 md:w-[269.4%] md:max-w-none md:-translate-x-1/2 md:-translate-y-1/2 md:-rotate-90 rounded-2xl shadow-[2px_5px_12px_rgba(0,0,0,0.55)]" />
+                </div>
+                <video
+                    ref={videoRef}
+                    src={percursoCorrida}
+                    controls
+                    muted
+                    playsInline
+                    preload="metadata"
+                    className="h-auto w-full md:w-[556px] min-w-0 rounded-2xl shadow-[2px_5px_12px_rgba(0,0,0,0.55)]" />
             </div>
 
         </main>
