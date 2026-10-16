@@ -88,31 +88,31 @@ function Home() {
                 ]} />
             </div>
 
-            <div className='md:h-[200px] md:mt-[30px] h-[110px] mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-center items-center md:gap-[70px] gap-[8px] rounded-[16px]'>
-                <div className='w-fit flex-col'>
+            <div className='md:h-[200px] md:mt-[30px] h-[100px] mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-evenly items-center md:gap-[70px] gap-0 rounded-[16px] px-[4px] md:px-0'>
+                <div className='flex-1 flex flex-col items-center'>
                     {jaComecou ? (
-                        <p className=' text-center text-[#d10c56] md:text-[56px] text-[20px] m-0 p-0 leading-none '>JÁ<br />COMEÇOU</p>
+                        <p className='text-center text-[#d10c56] md:text-[56px] text-[18px] m-0 p-0 leading-none'>JÁ<br />COMEÇOU</p>
                     ) : (
                         <>
-                            <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>{diasRestantes}</p>
-                            <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[14px] m-0 p-0 leading-none md:w-[145px] w-[80px] break-words md:pt-[15px] pt-[5px] '>{diasRestantes === 1 ? 'DIA FALTANDO' : 'DIAS FALTANDO'}</p>
+                            <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>{diasRestantes}</p>
+                            <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>{diasRestantes === 1 ? 'DIA FALTANDO' : 'DIAS FALTANDO'}</p>
                         </>
                     )}
                 </div>
-                <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
-                <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>+20</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>ATIVIDADES</p>
+                <div className="md:h-[150px] h-[60px] w-[1px] md:w-[2px] bg-white shrink-0"></div>
+                <div className='flex-1 flex flex-col items-center'>
+                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>+20</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>ATIVIDADES</p>
                 </div>
-                <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
-                <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>6</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>PALESTRANTES</p>
+                <div className="md:h-[150px] h-[60px] w-[1px] md:w-[2px] bg-white shrink-0"></div>
+                <div className='flex-1 flex flex-col items-center'>
+                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>6</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>PALESTRANTES</p>
                 </div>
-                <div className="md:h-[150px] h-[80px] w-[2px] bg-white shrink-0"></div>
-                <div className='w-fit flex-col'>
-                    <p className=' text-center text-[#d10c56] md:text-[98px] text-[42px] m-0 p-0 leading-none '>+4000</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className=' text-center md:text-left text-white md:text-[30px] text-[11px] m-0 p-0 leading-none w-fit md:pt-[15px] pt-[5px] '>PARTICIPANTES</p>
+                <div className="md:h-[150px] h-[60px] w-[1px] md:w-[2px] bg-white shrink-0"></div>
+                <div className='flex-1 flex flex-col items-center'>
+                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>+4000</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>PARTICIPANTES</p>
                 </div>
             </div>
 
