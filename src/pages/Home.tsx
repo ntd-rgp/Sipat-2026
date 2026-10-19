@@ -84,7 +84,7 @@ function Home() {
             <div className='md:mt-[30px] mt-[20px] ml-[2%] mr-[2%]'>
                 <VideoCarousel videos={[
                     { src: chamadaDenison, label: 'Chamada Denison Mattos' },
-                    { src: chamadaPeralta, label: 'Chamada Flavio Peralta' },
+                    { src: chamadaPeralta, label: 'Chamada Flávio Peralta' },
                 ]} />
             </div>
 
@@ -262,7 +262,7 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
-                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Flavio Peralta</p>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Flávio Peralta</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Sexta-Feira</p>
                                 <p>09:30</p>
@@ -276,8 +276,10 @@ function Home() {
                 <div className='h-fit w-full flex '>
                     <div style={{ backgroundImage: `url(${new URL('../assets/REGAP-9942.jpg', import.meta.url).href})` }} className='w-full h-fit rounded-2xl flex bg-cover bg-[0%_20%] bg-no-repeat mb-[5%] shadow-[2px_5px_12px_rgba(0,0,0,0.55)] '>
                         <div className=' bg-[linear-gradient(to_left,#0e2245_40%,transparent_50%)] rounded-2xl md:h-[300px] h-[105px] w-[100%] flex flex-col text-center content-center justify-center text-white'>
-                            <p className=' md:w-[425px] w-[120px] self-end break-words text-left mr-[4.5%] md:text-[56px] text-[16px] leading-none '>Eventos sob</p>
-                            <p className=' w-fit self-end break-words text-right mr-[8%] md:text-[115px] text-[32px] leading-none '>Inscrição</p>
+                            <div className='self-end mr-[2%] text-left'>
+                                <p className='md:text-[56px] text-[16px] leading-none'>Eventos sob</p>
+                                <p className='md:text-[115px] text-[32px] leading-none'>Inscrição</p>
+                            </div>
                         </div>
                     </div>
                 </div>
