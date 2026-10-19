@@ -6,6 +6,7 @@ import mapaCorrida from '../assets/mapa-corrida.svg';
 import percursoCorrida from '../assets/percurso-corrida.mp4';
 import chamadaDenison from '../assets/chamada-denison.mp4';
 import chamadaPeralta from '../assets/chamada-peralta.mp4';
+import chamadaTeams from '../assets/chamada-teams.mp4';
 import VideoCarousel from '../components/VideoCarousel';
 
 const dataInicio = new Date(2026, 10, 9);
@@ -85,6 +86,7 @@ function Home() {
                 <VideoCarousel videos={[
                     { src: chamadaDenison, label: 'Chamada Denison Mattos' },
                     { src: chamadaPeralta, label: 'Chamada Flávio Peralta' },
+                    { src: chamadaTeams, label: 'Vídeo Teams' },
                 ]} />
             </div>
 
