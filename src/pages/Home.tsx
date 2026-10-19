@@ -189,7 +189,7 @@ function Home() {
                                 <p>Quadra do CETRE</p>
                                 <p>Quarta-Feira</p>
                                 <p>09:30</p>
-                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Encenações e interações com a força de trabalho, com temas voltados a segurança e integridade</p>
+                                <p className='mt-[2px] md:mt-[6px] text-gray-600'>Encenações e interações com a força de trabalho, com temas voltados à segurança e integridade</p>
                             </div>
                         </div>
                     </div>
@@ -277,7 +277,7 @@ function Home() {
                     <div style={{ backgroundImage: `url(${new URL('../assets/REGAP-9942.jpg', import.meta.url).href})` }} className='w-full h-fit rounded-2xl flex bg-cover bg-[0%_20%] bg-no-repeat mb-[5%] shadow-[2px_5px_12px_rgba(0,0,0,0.55)] '>
                         <div className=' bg-[linear-gradient(to_left,#0e2245_40%,transparent_50%)] rounded-2xl md:h-[300px] h-[105px] w-[100%] flex flex-col text-center content-center justify-center text-white'>
                             <p className=' md:w-[425px] w-[120px] self-end break-words text-left mr-[4.5%] md:text-[56px] text-[16px] leading-none '>Eventos sob</p>
-                            <p className=' w-fit self-end break-words text-right mr-[8%] md:text-[115px] text-[32px] leading-none '>Incrição</p>
+                            <p className=' w-fit self-end break-words text-right mr-[8%] md:text-[115px] text-[32px] leading-none '>Inscrição</p>
                         </div>
                     </div>
                 </div>
