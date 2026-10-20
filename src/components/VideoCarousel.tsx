@@ -53,14 +53,14 @@ function VideoCarousel({ videos }: VideoCarouselProps) {
     }
 
     return (
-        <div className="relative w-full select-none overflow-hidden rounded-2xl shadow-[2px_5px_12px_rgba(0,0,0,0.55)] bg-black">
+        <div className="relative w-full select-none overflow-hidden rounded-2xl shadow-[2px_5px_12px_rgba(0,0,0,0.55)] bg-black aspect-video">
             {/* Track que desliza */}
             <div
-                className="flex transition-transform duration-500 ease-in-out"
+                className="flex transition-transform duration-500 ease-in-out h-full"
                 style={{ transform: `translateX(-${current * 100}%)` }}
             >
                 {videos.map((video, i) => (
-                    <div key={i} className="w-full shrink-0">
+                    <div key={i} className="w-full shrink-0 h-full flex items-center justify-center">
                         <video
                             ref={el => { videoRefs.current[i] = el; }}
                             src={video.src}
@@ -69,7 +69,7 @@ function VideoCarousel({ videos }: VideoCarouselProps) {
                             onPlay={() => { if (i === current) setIsPlaying(true); }}
                             onPause={() => { if (i === current) setIsPlaying(false); }}
                             onEnded={() => { if (i === current) handleEnded(); }}
-                            className="w-full block"
+                            className="max-w-full max-h-full block object-contain"
                         />
                     </div>
                 ))}
