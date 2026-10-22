@@ -115,7 +115,7 @@ function Home() {
                 </div>
                 <div className="md:h-[150px] h-[60px] w-[1px] md:w-[2px] bg-white shrink-0"></div>
                 <div className='flex-1 flex flex-col items-center'>
-                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>+3000</p>
+                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>+4000</p>
                     <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>PARTICIPANTES</p>
                 </div>
             </div>
