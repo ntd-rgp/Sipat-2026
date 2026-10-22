@@ -7,6 +7,7 @@ import percursoCorrida from '../assets/percurso-corrida.mp4';
 import chamadaDenison from '../assets/chamada-denison.mp4';
 import chamadaPeralta from '../assets/chamada-peralta.mp4';
 import chamadaTeams from '../assets/chamada-teams.mp4';
+import videoImg7111 from '../assets/IMG_7111.mp4';
 import VideoCarousel from '../components/VideoCarousel';
 
 const dataInicio = new Date(2026, 10, 9);
@@ -87,6 +88,7 @@ function Home() {
                     { src: chamadaDenison, label: 'Chamada Denison Mattos' },
                     { src: chamadaPeralta, label: 'Chamada Flávio Peralta' },
                     { src: chamadaTeams, label: 'Vídeo Teams' },
+                    { src: videoImg7111, label: 'Vídeo SIPAT' },
                 ]} />
             </div>
 
