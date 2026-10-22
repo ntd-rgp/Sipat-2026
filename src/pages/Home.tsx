@@ -164,6 +164,14 @@ function Home() {
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
+                                <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Dinâmica da movimentação de carga</p>
+                                <p>Saída do refeitório</p>
+                                <p>Quinta-Feira</p>
+                                <p>11:30</p>
+                            </div>
+                        </div>
+                        <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
+                            <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Feira agroecológica</p>
                                 <p>Saída do refeitório</p>
                                 <p>Segunda-Feira</p>
