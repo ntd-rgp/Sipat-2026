@@ -92,31 +92,31 @@ function Home() {
                 ]} />
             </div>
 
-            <div className='md:h-[200px] md:mt-[30px] h-[100px] mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-evenly items-center md:gap-[70px] gap-0 rounded-[16px] px-[4px] md:px-0'>
+            <div className='md:min-h-[200px] md:mt-[30px] h-[100px] md:h-auto mt-[20px] ml-[2%] mr-[2%] bg-[#0e2245] flex justify-evenly items-center md:gap-[24px] lg:gap-[40px] gap-0 rounded-[16px] px-[4px] md:px-[40px] lg:px-[60px] md:py-[28px]'>
                 <div className='flex-1 flex flex-col items-center'>
                     {jaComecou ? (
-                        <p className='text-center text-[#d10c56] md:text-[56px] text-[18px] m-0 p-0 leading-none'>JÁ<br />COMEÇOU</p>
+                        <p className='text-center text-[#d10c56] md:text-[40px] lg:text-[48px] xl:text-[56px] text-[18px] m-0 p-0 leading-none'>JÁ<br />COMEÇOU</p>
                     ) : (
                         <>
-                            <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>{diasRestantes}</p>
-                            <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>{diasRestantes === 1 ? 'DIA FALTANDO' : 'DIAS FALTANDO'}</p>
+                            <p className='text-center text-[#d10c56] md:text-[60px] lg:text-[76px] xl:text-[90px] text-[28px] m-0 p-0 leading-none'>{diasRestantes}</p>
+                            <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[20px] lg:text-[24px] xl:text-[28px] text-[9px] m-0 p-0 leading-tight md:pt-[12px] pt-[4px]'>{diasRestantes === 1 ? 'DIA FALTANDO' : 'DIAS FALTANDO'}</p>
                         </>
                     )}
                 </div>
-                <div className="md:h-[150px] h-[60px] w-[1px] md:w-[2px] bg-white shrink-0"></div>
+                <div className="md:h-[120px] lg:h-[140px] h-[60px] w-[1px] md:w-[2px] bg-white/70 shrink-0"></div>
                 <div className='flex-1 flex flex-col items-center'>
-                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>+20</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>ATIVIDADES</p>
+                    <p className='text-center text-[#d10c56] md:text-[60px] lg:text-[76px] xl:text-[90px] text-[28px] m-0 p-0 leading-none'>+20</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[20px] lg:text-[24px] xl:text-[28px] text-[9px] m-0 p-0 leading-tight md:pt-[12px] pt-[4px]'>ATIVIDADES</p>
                 </div>
-                <div className="md:h-[150px] h-[60px] w-[1px] md:w-[2px] bg-white shrink-0"></div>
+                <div className="md:h-[120px] lg:h-[140px] h-[60px] w-[1px] md:w-[2px] bg-white/70 shrink-0"></div>
                 <div className='flex-1 flex flex-col items-center'>
-                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>6</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>PALESTRANTES</p>
+                    <p className='text-center text-[#d10c56] md:text-[60px] lg:text-[76px] xl:text-[90px] text-[28px] m-0 p-0 leading-none'>6</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[20px] lg:text-[24px] xl:text-[28px] text-[9px] m-0 p-0 leading-tight md:pt-[12px] pt-[4px]'>PALESTRANTES</p>
                 </div>
-                <div className="md:h-[150px] h-[60px] w-[1px] md:w-[2px] bg-white shrink-0"></div>
+                <div className="md:h-[120px] lg:h-[140px] h-[60px] w-[1px] md:w-[2px] bg-white/70 shrink-0"></div>
                 <div className='flex-1 flex flex-col items-center'>
-                    <p className='text-center text-[#d10c56] md:text-[98px] text-[28px] m-0 p-0 leading-none'>+4000</p>
-                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[30px] text-[9px] m-0 p-0 leading-tight md:pt-[15px] pt-[4px]'>PARTICIPANTES</p>
+                    <p className='text-center text-[#d10c56] md:text-[60px] lg:text-[76px] xl:text-[90px] text-[28px] m-0 p-0 leading-none'>+4000</p>
+                    <p style={{ fontFamily: 'Petrobras Sans Rg' }} className='text-center text-white md:text-[20px] lg:text-[24px] xl:text-[28px] text-[9px] m-0 p-0 leading-tight md:pt-[12px] pt-[4px]'>PARTICIPANTES</p>
                 </div>
             </div>
 
@@ -129,8 +129,8 @@ function Home() {
                 <div className='h-fit w-full flex '>
                     <div style={{ backgroundImage: `url(${new URL('../assets/REGAP-9942.jpg', import.meta.url).href})` }} className='w-full h-fit rounded-2xl flex bg-cover bg-left bg-no-repeat mb-[5%] shadow-[2px_5px_12px_rgba(0,0,0,0.55)] '>
                         <div className=' bg-[linear-gradient(to_right,#D10C56_33%,transparent_38%)] rounded-2xl md:h-[300px] h-[105px] w-[100%] flex flex-col text-center content-center justify-center'>
-                            <p className=' w-fit break-words text-left ml-[6%] md:text-[56px] text-[16px] leading-none '>Eventos</p>
-                            <p className=' w-fit break-words text-left ml-[6%] md:text-[115px] text-[32px] leading-none '>Livres</p>
+                            <p className=' w-fit break-words text-left ml-[6%] md:text-[56px] text-[16px] leading-none text-white '>Eventos</p>
+                            <p className=' w-fit break-words text-left ml-[6%] md:text-[115px] text-[32px] leading-none text-white '>Livres</p>
                         </div>
                     </div>
                 </div>
@@ -394,9 +394,10 @@ function Home() {
             <div className=' mr-[2%] ml-[2%] h-fit text-center flex justify-center items-center mt-[20px] '>
                 <a href='https://forms.cloud.microsoft/r/w4bYSrte2W' className=' transition-transform duration-80 active:scale-96 text-white bg-[#0e2245] w-[350px] md:w-[600px] m-[5px] rounded-[15px] h-[45px] md:h-[65px] flex justify-center items-center text-[22px] md:text-[36px] shadow-[6px_8px_12px_rgba(0,0,0,0.65)] '>Clique aqui para se inscrever</a>
             </div>
-            <div className=' mr-[2%] ml-[2%] mt-[20px] md:mt-[40px] flex flex-col md:flex-row justify-center items-center gap-[8px] '>
-                {/* Celular: mapa na horizontal, mesma largura do vídeo, ambos com a margem de 2% do container. Telas maiores: caixa com a proporção do mapa girado (510 x 1374) e a imagem gira -90° dentro dela */}
-                <div className="relative w-full md:aspect-[510/1374] md:w-[265px] shrink-0">
+            <h2 className='mr-[2%] ml-[2%] mt-[20px] md:mt-[40px] text-center font-bold text-[#D10C56] text-[22px] md:text-[48px] leading-tight'>Mapa da Corrida Sipat 2026</h2>
+            <div className=' mr-[2%] ml-[2%] mt-[10px] md:mt-[20px] flex flex-col md:flex-row justify-center items-center gap-[8px] '>
+                {/* Celular: mapa na horizontal, mesma largura do vídeo, ambos com a margem de 2% do container. Telas maiores: mapa e vídeo com a mesma altura; a largura de cada um vem da própria proporção (mapa girado 510 x 1374, vídeo 720 x 1024) e a imagem gira -90° dentro da caixa */}
+                <div className="relative w-full md:aspect-[510/1374] md:h-[600px] lg:h-[720px] md:w-auto shrink-0">
                     <img
                         src={mapaCorrida}
                         alt="Mapa da corrida SIPAT 2026"
@@ -410,7 +411,7 @@ function Home() {
                     muted
                     playsInline
                     preload="metadata"
-                    className="h-auto w-full md:w-[556px] min-w-0 rounded-2xl shadow-[2px_5px_12px_rgba(0,0,0,0.55)]" />
+                    className="h-auto w-full md:aspect-[720/1024] md:h-[600px] lg:h-[720px] md:w-auto min-w-0 object-contain rounded-2xl shadow-[2px_5px_12px_rgba(0,0,0,0.55)]" />
             </div>
 
         </main>

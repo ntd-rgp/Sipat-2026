@@ -53,7 +53,7 @@ function VideoCarousel({ videos }: VideoCarouselProps) {
     }
 
     return (
-        <div className="relative w-full select-none overflow-hidden rounded-2xl shadow-[2px_5px_12px_rgba(0,0,0,0.55)] bg-black aspect-video">
+        <div className="relative w-full select-none overflow-hidden bg-transparent aspect-video">
             {/* Track que desliza */}
             <div
                 className="flex transition-transform duration-500 ease-in-out h-full"
@@ -69,7 +69,7 @@ function VideoCarousel({ videos }: VideoCarouselProps) {
                             onPlay={() => { if (i === current) setIsPlaying(true); }}
                             onPause={() => { if (i === current) setIsPlaying(false); }}
                             onEnded={() => { if (i === current) handleEnded(); }}
-                            className="max-w-full max-h-full block object-contain"
+                            className="max-w-full max-h-full block object-contain rounded-2xl"
                         />
                     </div>
                 ))}
@@ -107,7 +107,7 @@ function VideoCarousel({ videos }: VideoCarouselProps) {
             <button
                 onClick={prev}
                 aria-label="Vídeo anterior"
-                className="absolute left-[8px] md:left-[16px] top-1/2 -translate-y-1/2 z-10 bg-black/15 hover:bg-black/30 text-white rounded-full w-[30px] h-[30px] md:w-[46px] md:h-[46px] flex items-center justify-center text-[18px] md:text-[26px] cursor-pointer transition-colors"
+                className="absolute left-[8px] md:left-[16px] top-1/2 -translate-y-1/2 z-10 bg-[#0e2245]/70 hover:bg-[#0e2245] text-white rounded-full w-[30px] h-[30px] md:w-[46px] md:h-[46px] flex items-center justify-center text-[18px] md:text-[26px] cursor-pointer transition-colors"
             >
                 ‹
             </button>
@@ -116,7 +116,7 @@ function VideoCarousel({ videos }: VideoCarouselProps) {
             <button
                 onClick={next}
                 aria-label="Próximo vídeo"
-                className="absolute right-[8px] md:right-[16px] top-1/2 -translate-y-1/2 z-10 bg-black/15 hover:bg-black/30 text-white rounded-full w-[30px] h-[30px] md:w-[46px] md:h-[46px] flex items-center justify-center text-[18px] md:text-[26px] cursor-pointer transition-colors"
+                className="absolute right-[8px] md:right-[16px] top-1/2 -translate-y-1/2 z-10 bg-[#0e2245]/70 hover:bg-[#0e2245] text-white rounded-full w-[30px] h-[30px] md:w-[46px] md:h-[46px] flex items-center justify-center text-[18px] md:text-[26px] cursor-pointer transition-colors"
             >
                 ›
             </button>
@@ -131,7 +131,7 @@ function VideoCarousel({ videos }: VideoCarouselProps) {
                         className={`rounded-full transition-colors cursor-pointer ${
                             i === current
                                 ? 'bg-[#d10c56] w-[10px] h-[10px] md:w-[14px] md:h-[14px]'
-                                : 'bg-white/60 hover:bg-white w-[8px] h-[8px] md:w-[12px] md:h-[12px]'
+                                : 'bg-gray-400 hover:bg-gray-500 w-[8px] h-[8px] md:w-[12px] md:h-[12px]'
                         }`}
                     />
                 ))}
