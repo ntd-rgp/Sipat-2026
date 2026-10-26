@@ -28,6 +28,16 @@ function calcularDias() {
     return Math.max(0, dias);
 }
 
+function DivisorDia({ titulo }: { titulo: string }) {
+    return (
+        <div className='flex items-center gap-[10px] md:gap-[16px] mt-[10px] md:mt-[20px] mb-[10px] md:mb-[16px]'>
+            <span className='flex-1 h-[1px] md:h-[2px] bg-gray-300' />
+            <p className='text-gray-400 font-bold text-[12px] md:text-[22px] whitespace-nowrap'>{titulo}</p>
+            <span className='flex-1 h-[1px] md:h-[2px] bg-gray-300' />
+        </div>
+    );
+}
+
 function Home() {
     // Calcula já na primeira renderização para não piscar "Já começou"
     const [diasRestantes, setdiasRestantes] = useState(calcularDias);
@@ -136,12 +146,13 @@ function Home() {
                 </div>
                 <div className='h-fit w-full flex-col flex-1 justify-between '>
                     <div className='flex flex-col w-full'>
+                        <DivisorDia titulo='1º Dia' />
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Abertura SIPAT</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Segunda-Feira</p>
-                                <p>7h45</p>
+                                <p>09/11 7h45</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -149,7 +160,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Denison Mattos</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Segunda-Feira</p>
-                                <p>8h45</p>
+                                <p>09/11 8h45</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Administrador e professor, fala voltada para o equilíbrio na vida e atenção</p>
                             </div>
                         </div>
@@ -158,7 +169,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Fabi do Vôlei</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Segunda-Feira</p>
-                                <p>9h40</p>
+                                <p>09/11 9h40</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Ex-atleta, bicampeã olímpica, comentarista e apresentadora no SporTV.</p>
                             </div>
                         </div>
@@ -168,23 +179,25 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Feira agroecológica</p>
                                 <p>Saída do refeitório</p>
                                 <p>Segunda-Feira</p>
-                                <p>11h30</p>
+                                <p>09/11 11h30</p>
                             </div>
                         </div>
+                        <DivisorDia titulo='2º Dia' />
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Grupo musical Imusi ou Orquestra Ramacrisna</p>
                                 <p>Hall do prédio administrativo</p>
                                 <p>Terça-Feira</p>
-                                <p>12h</p>
+                                <p>10/11 12h</p>
                             </div>
                         </div>
+                        <DivisorDia titulo='3º Dia' />
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Josue Maia França</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Quarta-Feira</p>
-                                <p>8h30</p>
+                                <p>11/11 8h30</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Colega da Petrobras, fala sobre fatores humanos</p>
                             </div>
                         </div>
@@ -193,7 +206,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Teatro Educa Vida</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Quarta-Feira</p>
-                                <p>9h30</p>
+                                <p>11/11 9h30</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Encenações e interações com a força de trabalho, com temas voltados à segurança e integridade</p>
                             </div>
                         </div>
@@ -204,7 +217,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Lançamento Ecoponto na Regap</p>
                                 <p>#</p>
                                 <p>Quarta-Feira</p>
-                                <p>10h30</p>
+                                <p>11/11 10h30</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] '>
@@ -212,7 +225,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Game Show</p>
                                 <p>Saída do refeitório</p>
                                 <p>Quarta-Feira</p>
-                                <p>11h30</p>
+                                <p>11/11 11h30</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] '>
@@ -220,16 +233,17 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Josue Maia França</p>
                                 <p>Refeitório</p>
                                 <p>Quarta-Feira</p>
-                                <p>14h30</p>
+                                <p>11/11 14h30</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Colega da Petrobras, fala sobre fatores humanos</p>
                             </div>
                         </div>
+                        <DivisorDia titulo='4º Dia' />
                         <div className='mb-[10px] items-center border-b-2 flex justify-between border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Game Show C3</p>
                                 <p>R-1</p>
                                 <p>Quinta-Feira</p>
-                                <p>8h</p>
+                                <p>12/11 8h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -237,7 +251,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Dinâmica da movimentação de carga</p>
                                 <p>Saída do refeitório</p>
                                 <p>Quinta-Feira</p>
-                                <p>11h30</p>
+                                <p>12/11 11h30</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -245,7 +259,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Grupo musical Imusi ou Orquestra Ramacrisna</p>
                                 <p>Hall do prédio administrativo</p>
                                 <p>Quinta-Feira</p>
-                                <p>12h</p>
+                                <p>12/11 12h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -253,15 +267,16 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Game Show – Gramo</p>
                                 <p>Área da GRAMO</p>
                                 <p>Quinta-Feira</p>
-                                <p>12h45</p>
+                                <p>12/11 12h45</p>
                             </div>
                         </div>
+                        <DivisorDia titulo='5º Dia' />
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] justify-start text-left '>Encerramento da SIPAT</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Sexta-Feira</p>
-                                <p>7h45</p>
+                                <p>13/11 7h45</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -269,7 +284,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Rodrigo Antunes</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Sexta-Feira</p>
-                                <p>8h45</p>
+                                <p>13/11 8h45</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Tec Segurança Regap - abordará o tema de movimentação de cargas</p>
                             </div>
                         </div>
@@ -278,7 +293,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Palestra - Flávio Peralta</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Sexta-Feira</p>
-                                <p>9h30</p>
+                                <p>13/11 9h30</p>
                                 <p className='mt-[2px] md:mt-[6px] text-gray-600'>Sobrevivente de uma descarga de 13,8kV; fala sobre impactos na vida, riscos, superação</p>
                             </div>
                         </div>
@@ -298,12 +313,13 @@ function Home() {
                 </div>
                 <div className='h-fit w-full flex-col flex-1 justify-between '>
                     <div className='flex flex-col w-full'>
+                        <DivisorDia titulo='1º ao 4º Dia' />
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Campeonato de Peteca</p>
                                 <p>Quadra da Academia</p>
                                 <p>Segunda, Terça, Quarta e Quinta-Feira</p>
-                                <p>11h</p>
+                                <p>09/11 a 12/11 11h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -311,7 +327,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Campeonato de Basquete</p>
                                 <p>Quadra SMS</p>
                                 <p>Segunda, Terça, Quarta e Quinta-Feira</p>
-                                <p>11h</p>
+                                <p>09/11 a 12/11 11h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -319,7 +335,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Campeonato de Tênis de Mesa</p>
                                 <p>Prédio PM</p>
                                 <p>Segunda, Terça, Quarta e Quinta-Feira</p>
-                                <p>11h</p>
+                                <p>09/11 a 12/11 11h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -327,7 +343,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Campeonato de Totó</p>
                                 <p>Prédio PM</p>
                                 <p>Segunda, Terça, Quarta e Quinta-Feira</p>
-                                <p>11h</p>
+                                <p>09/11 a 12/11 11h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -335,15 +351,16 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Campeonato de Xadrez</p>
                                 <p>CIC</p>
                                 <p>Segunda, Terça, Quarta e Quinta-Feira</p>
-                                <p>11h</p>
+                                <p>09/11 a 12/11 11h</p>
                             </div>
                         </div>
+                        <DivisorDia titulo='2º Dia' />
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Corrida</p>
                                 <p>Porta do CETRE</p>
                                 <p>Terça-Feira</p>
-                                <p>8h</p>
+                                <p>10/11 8h</p>
                             </div>
                         </div>
                     </div>
@@ -353,7 +370,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Yoga</p>
                                 <p>Quadra do CETRE</p>
                                 <p>Terça-Feira</p>
-                                <p>10h e 11h</p>
+                                <p>10/11 10h e 11h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -361,23 +378,25 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Oficina de Marmita</p>
                                 <p>Refeitório</p>
                                 <p>Terça-Feira</p>
-                                <p>14h e 15h</p>
+                                <p>10/11 14h e 15h</p>
                             </div>
                         </div>
+                        <DivisorDia titulo='3º Dia' />
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Spinning</p>
                                 <p>Hall do prédio administrativo</p>
                                 <p>Quarta-Feira</p>
-                                <p>11h e 12h</p>
+                                <p>11/11 11h e 12h</p>
                             </div>
                         </div>
+                        <DivisorDia titulo='4º Dia' />
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
                             <div className=' w-full flex flex-col justify-center items-start pl-[5px] text-left text-[12px] md:text-[24px] leading-3.5 md:leading-tight '>
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Enduro</p>
                                 <p>Porta do CETRE</p>
                                 <p>Quinta-Feira</p>
-                                <p>8h</p>
+                                <p>12/11 8h</p>
                             </div>
                         </div>
                         <div className='mb-[10px] items-center border-b-2 border-gray-300 min-h-[70px] md:min-h-[150px] md:py-[12px] w-full flex justify-between '>
@@ -385,7 +404,7 @@ function Home() {
                                 <p className='font-bold text-[#D10C56] text-[14px] md:text-[32px] mb-[2px] md:mb-[6px] '>Plantio de Mudas</p>
                                 <p>Quiosque do CETRE</p>
                                 <p>Quinta-Feira</p>
-                                <p>14h e 15h</p>
+                                <p>12/11 14h e 15h</p>
                             </div>
                         </div>
                     </div>
