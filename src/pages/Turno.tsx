@@ -10,12 +10,12 @@ type Atividade = {
     descricao?: string;
 };
 
-const oficina = (data: string): Atividade => ({ titulo: 'Oficina: Marmita Saudável', local: 'CIC', datas: [data], horario: '15:00', descricao: 'Aihale Thiago' });
-const massagem = (data: string): Atividade => ({ titulo: 'Quick Massage', local: "CCL's e CIC", datas: [data], horario: '08:00 às 16:00' });
-const teatro = (data: string): Atividade => ({ titulo: 'Teatro', local: 'CIC', datas: [data], horario: '14:00' });
-const campeonato = (d1: string, d2: string): Atividade => ({ titulo: 'Sinuca e Xadrez (Campeonato)', local: 'CIC', datas: [d1, d2], horario: '21:00' });
-const pizza = (data: string): Atividade => ({ titulo: 'Pizza para o turno', local: "CCL's e CIC", datas: [data], horario: '21:00', descricao: 'Bella Pizza – Betim' });
-const palestra = (data: string): Atividade => ({ titulo: 'Palestra Fatores Humanos (Safety Day turno)', local: '#', datas: [data], horario: '21:15', descricao: 'Carolina Cruz da Silveira Moreira' });
+const oficina = (data: string): Atividade => ({ titulo: 'Oficina: Marmita Saudável', local: 'CIC', datas: [data], horario: '15h', descricao: 'Aihale Thiago' });
+const massagem = (data: string): Atividade => ({ titulo: 'Quick Massage', local: "CCL's e CIC", datas: [data], horario: '8h às 16h' });
+const teatro = (data: string): Atividade => ({ titulo: 'Teatro', local: 'CIC', datas: [data], horario: '14h' });
+const campeonato = (d1: string, d2: string): Atividade => ({ titulo: 'Sinuca e Xadrez (Campeonato)', local: 'CIC', datas: [d1, d2], horario: '21h' });
+const pizza = (data: string): Atividade => ({ titulo: 'Pizza para o turno', local: "CCL's e CIC", datas: [data], horario: '21h', descricao: 'Bella Pizza – Betim' });
+const palestra = (data: string): Atividade => ({ titulo: 'Palestra Fatores Humanos (Safety Day turno)', local: '#', datas: [data], horario: '21h15', descricao: 'Carolina Cruz da Silveira Moreira' });
 
 const grupos: { nome: string; atividades: Atividade[] }[] = [
     { nome: 'A', atividades: [massagem('11/11'), oficina('11/11'), campeonato('12/11', '13/11'), pizza('12/11'), palestra('23/11')] },
