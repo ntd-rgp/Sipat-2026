@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import imagemLateral from '../assets/imagemlateral.png';
-import logoSipat from '../assets/SIPAT_logo.png';
+import logoSipat from '../assets/SIPAT.svg';
 import mapaCorrida from '../assets/mapa-corrida.svg';
 import percursoCorrida from '../assets/percurso-corrida.mp4';
 import chamadaDenison from '../assets/chamada-denison.mp4';
